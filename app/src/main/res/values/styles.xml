@@ -1,0 +1,18 @@
+<resources>
+    <style name="Widget.AllAppDevelopingCourse.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="Widget.AllAppDevelopingCourse.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+    <!-- Define custom text appearance for TabLayout tabs -->
+    <style name="MyTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item> <!-- Text size -->
+        <item name="android:textColor">@color/white</item><!-- Text color -->
+        <item name="android:fontFamily">@font/kongshomj</item><!-- Text color -->
+        <!-- Add more attributes as needed -->
+    </style>
+
+</resources>

@@ -1,0 +1,80 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AppDevelopingCourse" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <!-- Secondary brand color. -->
+
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
+    </style>
+
+    <style name="AllAppDevelopingCourse" parent="Base.Theme.AppDevelopingCourse">
+        <item name="colorPrimaryDark">@color/SkyBlue</item>
+        <item name="colorPrimaryVariant">@color/Lavender</item>
+        <item name="colorOnPrimary">@color/White</item>
+        <item name="android:windowBackground">@color/White</item>
+
+    </style>
+
+    <style name="Theme.BMICalculator"  parent="Base.Theme.AppDevelopingCourse">
+
+        <item name="android:colorPrimaryDark">@color/Gold</item>
+        <item name="android:colorPrimary">@color/Blue</item>
+        <item name="android:colorAccent">@color/White</item>
+
+    </style>
+
+
+    <style name="Theme.Practice2"  parent="Base.Theme.AppDevelopingCourse">
+
+        <item name="android:colorPrimaryDark">#FC6F3C</item>
+        <item name="android:colorPrimary">@color/Blue</item>
+        <item name="android:colorAccent">@color/White</item>
+        <item name="android:navigationBarColor">@color/White</item>
+
+
+    </style>
+
+    <style name="Theme.Pratice1"  parent="Base.Theme.AppDevelopingCourse">
+
+        <item name="android:colorPrimaryDark">@color/Black</item>
+        <item name="android:colorPrimary">@color/Blue</item>
+        <item name="android:colorAccent">@color/White</item>
+
+
+    </style>
+    <style name="AllAppDevelopingCourse.Fullscreen" parent="AllAppDevelopingCourse">
+        <item name="android:actionBarStyle">
+            @style/Widget.AllAppDevelopingCourse.ActionBar.Fullscreen
+        </item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <style name="Widget.Button"  parent="Base.Theme.AppDevelopingCourse">
+
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50dp</item>
+
+    </style>
+
+    <style name="roundImajeRounder"  parent="Base.Theme.AppDevelopingCourse">
+
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50dp</item>
+
+    </style>
+
+    <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+    </style>
+
+
+
+</resources>

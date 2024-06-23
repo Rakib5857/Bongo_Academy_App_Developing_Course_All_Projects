@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeWork214_4">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/shape_rect01"
+        tools:ignore="MissingConstraints">
+
+        <!-- TextView for Title -->
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Home Work 214.4"
+            android:textSize="30sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/White"
+            android:textStyle="bold"/>
+
+        <!-- TextView for Subtitle -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Five Subjects Percentage and Grade Calculator"
+            android:textSize="15sp"
+            android:layout_below="@+id/tv_1"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/Black"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Enter your five subjects marks"
+        android:textColor="@color/Black"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/textView4">
+
+        <EditText
+            android:id="@+id/ed_Physics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:padding="10dp"
+            android:background="@drawable/transprant_shape"
+            android:hint="Physics"
+            android:layout_margin="10dp"
+            android:textColor="@color/Blue"
+            android:textColorHint="@color/Black"/>
+
+        <EditText
+            android:id="@+id/ed_Chemistry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:padding="10dp"
+            android:background="@drawable/transprant_shape"
+            android:hint="Chemistry"
+            android:layout_margin="10dp"
+            android:textColor="@color/Blue"
+            android:textColorHint="@color/Black"/>
+        <EditText
+            android:id="@+id/ed_Biology"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:padding="10dp"
+            android:background="@drawable/transprant_shape"
+            android:hint="Biology"
+            android:layout_margin="10dp"
+            android:textColor="@color/Blue"
+            android:textColorHint="@color/Black"/>
+        <EditText
+            android:id="@+id/ed_Mathematics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:padding="10dp"
+            android:background="@drawable/transprant_shape"
+            android:hint="Mathematics"
+            android:layout_margin="10dp"
+            android:textColor="@color/Blue"
+            android:textColorHint="@color/Black"/>
+        <EditText
+            android:id="@+id/ed_Computer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:padding="10dp"
+            android:background="@drawable/transprant_shape"
+            android:hint="Computer"
+            android:layout_margin="10dp"
+            android:textColor="@color/Blue"
+            android:textColorHint="@color/Black"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/b_ClickHere"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                android:layout_width="150dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:text="Click Here"
+                android:fontFamily="@font/lishadhinata_regular"
+                app:cornerRadius="10dp"
+                app:backgroundTint="@color/AliceBlue"
+                android:textColor="@color/Green" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/b_reset"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:text="Reset"
+                app:backgroundTint="@color/AliceBlue"
+                android:fontFamily="@font/lishadhinata_regular"
+                app:cornerRadius="10dp"
+                android:textColor="@color/DarkRed" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll"
+        android:orientation="vertical">
+
+
+
+    <TextView
+        android:id="@+id/tv_Display1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:padding="20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_gravity="center"
+        android:textColor="@color/Black"
+        android:textAlignment="center"
+        android:layout_margin="20dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_Display2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="30sp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/poppins_regular"
+        android:textAlignment="center"
+        android:layout_margin="20dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

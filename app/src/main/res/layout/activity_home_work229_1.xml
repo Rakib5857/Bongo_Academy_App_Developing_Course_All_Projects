@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeWork229_1">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/shape_rect01"
+        tools:ignore="MissingConstraints">
+
+        <!-- TextView for Title -->
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Home Work 229.1"
+            android:textSize="30sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/White"
+            android:textStyle="bold"/>
+
+        <!-- TextView for Subtitle -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Odd Number Generator "
+            android:textSize="24sp"
+            android:layout_below="@+id/tv_1"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/Black"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/rl">
+
+        <EditText
+            android:id="@+id/ed_InputValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:padding="10dp"
+            android:background="@drawable/transprant_shape"
+            android:hint="number"
+            android:layout_margin="10dp"
+            android:textColor="@color/Blue"
+            android:textColorHint="@color/Black"/>
+        <EditText
+            android:id="@+id/ed_InputValue2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:padding="10dp"
+            android:background="@drawable/transprant_shape"
+            android:hint="number2"
+            android:layout_margin="10dp"
+            android:textColor="@color/Blue"
+            android:textColorHint="@color/Black"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/b_ClickHere"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="150dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:text="Click Here"
+            android:fontFamily="@font/lishadhinata_regular"
+            app:cornerRadius="10dp"
+            app:backgroundTint="@color/AliceBlue"
+            android:textColor="@color/Green" />
+
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll">
+        <TextView
+            android:id="@+id/tv_Display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textAlignment="center"
+            android:textColor="@color/Black"
+            android:textSize="30sp" />
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

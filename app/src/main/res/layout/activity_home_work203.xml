@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeWork203"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/shape_rect01"
+        tools:ignore="MissingConstraints">
+
+        <!-- TextView for Title -->
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Home Work 203"
+            android:textSize="30sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/White"
+            android:textStyle="bold"/>
+
+        <!-- TextView for Subtitle -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Name Greetings"
+            android:textSize="25sp"
+            android:layout_below="@+id/tv_1"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/Black"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="আপনার নাম কি?"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textColor="@color/Black"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/editText_Input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:autofillHints="name"
+        android:hint="Your Name"
+        android:background="@drawable/transprant_shape"
+        android:textColorHint="@color/Black"
+        android:textColor="@color/Black"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:padding="10dp"
+        android:inputType="textPersonName"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_ClickHere"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+        android:text="ক্লিক করুন"
+        android:layout_gravity="center"
+        android:fontFamily="@font/lishadhinata_regular"
+        app:cornerRadius="10dp"
+        app:backgroundTint="@color/AliceBlue"
+        android:textColor="@color/Green" />
+
+
+    <TextView
+        android:id="@+id/text_Display"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="40sp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/Maroon"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginTop="30dp"/>
+
+</LinearLayout>

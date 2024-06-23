@@ -1,0 +1,68 @@
+<!-- custom_exit_dialog.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <EditText
+        android:id="@+id/ed_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:hint="Enter your name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/Red"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/ed_Number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter your number"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/Red"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_Add"
+            android:layout_weight="1"
+            android:text="Add"
+            android:onClick="onExitYesClicked"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            app:backgroundTint="@color/AliceBlue"
+            android:fontFamily="@font/lishadhinata_regular"
+            app:cornerRadius="10dp"
+            android:textColor="@color/Red" />
+
+        <Button
+            android:id="@+id/btn_No"
+            android:layout_weight="1"
+            android:text="No"
+            android:onClick="onExitYesClicked"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            app:backgroundTint="@color/AliceBlue"
+            android:fontFamily="@font/lishadhinata_regular"
+            app:cornerRadius="10dp"
+            android:textColor="@color/Green" />
+    </LinearLayout>
+
+</LinearLayout>

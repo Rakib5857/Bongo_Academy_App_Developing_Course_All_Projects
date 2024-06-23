@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeWork207"
+    android:layout_gravity="center"
+    android:gravity="top"
+    android:background="@color/Gold">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/shape_rect01"
+        tools:ignore="MissingConstraints">
+
+        <!-- TextView for Title -->
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Home Work 207"
+            android:textSize="32sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/White"
+            android:textStyle="bold"/>
+
+        <!-- TextView for Subtitle -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="BMI Calculator"
+            android:textSize="30sp"
+            android:layout_below="@+id/tv_1"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/Black"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BMI Calculator"
+        android:gravity="center"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:shadowColor="@color/Black"
+        android:shadowRadius="6"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginTop="50dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="আপনার ওজন কত ?(KG)"
+            android:textSize="30sp"
+            android:fontFamily="@font/lishadhinata_regular"
+            android:layout_margin="10dp"
+            android:textColor="@color/Black"/>
+
+        <EditText
+            android:id="@+id/ed_Weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:padding="20dp"
+            android:background="@drawable/transprant_shape"
+            android:hint="Your Weight"
+            android:layout_margin="10dp"
+            android:textColor="@color/Blue"
+            android:textColorHint="@color/Black"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="আপনার ঊচ্চতা কত?"
+            android:textSize="30sp"
+            android:fontFamily="@font/lishadhinata_regular"
+            android:textColor="@color/Black"
+            android:layout_margin="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/ed_Hight_Fit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:hint="Fit"
+                android:layout_marginLeft="10dp"
+                android:textColorHint="@color/Black"
+                android:textColor="@color/Blue"
+                android:padding="20dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/transprant_shape"
+                />
+            <EditText
+                android:id="@+id/ed_Hight_Inc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:hint="Inc"
+                android:layout_margin="5dp"
+                android:textColorHint="@color/Black"
+                android:textColor="@color/Blue"
+                android:padding="20dp"
+                android:background="@drawable/transprant_shape"
+                />
+        </LinearLayout>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/b_ClickHere"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:enabled="false"
+            android:text="BMI হিসাব করুন"
+            android:fontFamily="@font/lishadhinata_regular"
+            app:cornerRadius="10dp"
+            android:textColor="@color/Green" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:padding="56dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_Display"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/lishadhinata_regular"
+                android:padding="15dp"
+                android:textAlignment="center"
+                android:textColor="@color/Black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tv_Ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:padding="22dp"
+                android:fontFamily="@font/lishadhinata_regular"
+                android:textColor="@color/Black"
+                android:textAlignment="center"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

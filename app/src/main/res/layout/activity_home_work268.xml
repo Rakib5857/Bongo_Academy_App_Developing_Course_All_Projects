@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeWork268">
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/shape_rect01"
+        tools:ignore="MissingConstraints">
+
+        <!-- TextView for Title -->
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Home Work 268,269,270"
+            android:textSize="30sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/White"
+            android:textStyle="bold"/>
+
+        <!-- TextView for Subtitle -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Json Parsing and all"
+            android:textSize="25sp"
+            android:layout_below="@+id/tv_1"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/Black"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/rl"
+        tools:ignore="MissingConstraints">
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:background="@drawable/transprant_shape"
+        android:textColorHint="@color/Gray"
+        android:textColor="@color/Black" />
+    <EditText
+        android:id="@+id/editAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Age"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:inputType="number"
+        android:layout_marginTop="@dimen/_5ssp"
+        android:background="@drawable/transprant_shape"
+        android:layout_below="@id/editTextName"
+        android:textColorHint="@color/Gray"
+        android:textColor="@color/Black" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Number"
+        android:inputType="phone"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:layout_marginTop="@dimen/_5ssp"
+        android:layout_below="@id/editAge"
+        android:background="@drawable/transprant_shape"
+        android:textColorHint="@color/Gray"
+        android:textColor="@color/Black" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:layout_marginTop="@dimen/_5ssp"
+        android:layout_below="@id/editTextNumber"
+        android:background="@drawable/transprant_shape"
+        android:textColorHint="@color/Gray"
+        android:textColor="@color/Black" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/ll2"
+        tools:ignore="MissingConstraints">
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonSubmit"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+        app:backgroundTint="@color/AliceBlue"
+        app:cornerRadius="10dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="179dp"
+        android:layout_marginEnd="166dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/lishadhinata_regular"
+        android:text="Click Here"
+        android:textColor="@color/Green" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/buttonSubmit"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transprant_shape"
+            android:layout_below="@id/buttonSubmit"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp">
+
+            <EditText
+                android:id="@+id/editText_Search"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:hint="Search"
+                android:inputType="text"
+                android:drawablePadding="@dimen/_5sdp"
+                android:textSize="@dimen/_14sdp"
+                android:layout_gravity="center"
+                android:drawableStart="@drawable/ic_search_gray"
+                android:layout_margin="@dimen/_5ssp"
+                android:textColorHint="@color/Gray"
+                android:textColor="@color/Black" />
+
+            <Button
+                android:id="@+id/btn_Search"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                app:backgroundTint="@color/AliceBlue"
+                app:cornerRadius="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/lishadhinata_regular"
+                android:text="Search"
+                android:textColor="@color/Green" />
+        </LinearLayout>
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/ll"/>
+</RelativeLayout>
+</RelativeLayout>
